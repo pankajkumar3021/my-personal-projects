@@ -1,10 +1,11 @@
+/* Note that Pizza is immutable and that parameter values are all in a single location. Because the Builder's setter methods return the Builder object they are able to be chained.
+
+   Pizza will have a  subclass PizzaBuilder
+   Pizza will have a  ctor that takes a  PizzaBuilder
+   */
+
 class Pizza
 {
-public:
-    Pizza(const builder &bd)
-    {
-    }
-
 private:
     int size = 10;
     bool cheese = false;
@@ -14,7 +15,7 @@ private:
 public:
     class PizzaBuilder
     {
-    private:
+    public:
         int size = 10;
         bool cheese = false;
         bool peproni = false;
@@ -23,13 +24,23 @@ public:
     public:
         PizzaBuilder(Pizza &pz);
         PizaBuilder &size(int sz);
-        PizaBuilder &size(int sz);
-        PizaBuilder &size(int sz);
+        PizaBuilder &bacon(bool);
+        PizaBuilder &cheese(bool );
+        PizaBuilder &peproni(bool);
         unique_ptr<Pizza> build()
         {
             return new Pizza(this);
-        };
+        }
 
     }
 
-    auto Pizza = Pizza
+public:
+    Pizza(const builder& bd)
+    {
+      size=bd.size;
+      
+    }
+}
+
+
+   

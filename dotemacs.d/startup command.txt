@@ -1,0 +1,1 @@
+"C:\Program Files\GNU Emacs 27.1\bin\runemacs.exe" -q -l C:\pankaj\sw\emacs\.emacs.d\init.el

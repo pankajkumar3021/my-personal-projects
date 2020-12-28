@@ -1,0 +1,32 @@
+- [[https://keithschwarz.com/interesting/][Intersting DS Code]]
+- SOA
+  - Concepts
+    - Services
+      - Interoperability 
+      - High Connctivity
+    - Loose Coupling
+      - Flexibility
+      - Scalability
+      - Fault Tolerance
+  - SOA Ingredients
+    - Infrasrtucture
+      - Infrastructure is the technical part of SOA that enables high interoperability. The infrastructure
+      of a SOA landscape is called an enterprise service bus (ESB).key feature of the ESB is that it enables you to call services between heterogeneous
+      systems. Its responsibilities include data transformation, (intelligent) routing, dealing with
+      security and reliability, service management, monitoring, and logging.
+  - Architecture
+    - Restrict Possibilities
+    - Amount of Loose Coupling
+    - Rules ,policies and Patterns
+    - Restrict Data Model Of Service Interface
+  - Processes
+    - BPM
+      - Business Processes to tasks breakups
+    - Service Life Cycle
+    - Model Driven Software Devlopment
+  - Governance
+    - The metaprocess of all processes and a SOA strategy as a whole is governance
+- JAVASCIPT  
+  - https://medium.com/@deallen7/learn-to-code-an-api-in-javascript-4702a266715b
+https://medium.com/@aka.rider/how-to-optimize-c-and-c-code-in-2018-bd4f90a72c2b
+  - [[https://www.quora.com/Can-I-get-a-machine-learning-job-if-I-finish-Andrew-Ngs-Deep-Learning-Specialization][Quora]]

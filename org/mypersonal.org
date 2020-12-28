@@ -1,0 +1,87 @@
+* Spontaneous speaking
+ - questioning
+ - conversational
+ - present
+ - out {{wrong naming}}
+ - be dull 
+ - opportunity {{imaginary gift game}}
+* Performance measurement linux
+  ss - socket stat
+  strace trace system calls and signal
+
+* HEALTH 
+1.  Brain Foods - Avocado, Blueberries, Broccoli, Coconut Oil, Eggs, Green + Leafy Veggies, Salmon, Turmeric (Tea), Walnuts, Dark Chocolate.
+2.  Killing ANTs (Automatic Negative Thoughts) - recognize when your pessimism leads to HABITUAL inaction, doubt, and/or self-scolding.
+3.  Exercise - Particularly in the morning, and especially anything that either (a) takes you outside into nature or (b) has you pushing the limits of your muscles and body. Good: Burpies (push up + jump)
+4.  Brain Nutrients - see what vitamins/minerals your body is lacking. Vitamin B,DHA,Vitamin D 
+5.  Positive Peer Group; who you spend time with is who you become. This extends to virtual peer groups, and even YouTuber/podcaster subscriptions
+6.  Clean Environment 
+7.  Sleep
+8.  Brain Protection 
+9.  Don't Stop Learning New Things
+10.  Stress Management
+
+* Important Notes
+  - Computer
+    Memory ,TLB,Page Table diagrams depicting their relationship
+    [[./images/page-table-tlb.png]]
+    [[./images/tlb-memory-interaction.PNG]]
+  
+* multiprocessor architecture shared memory issues
+   - MESI protocol for cache coherency
+     A write may only be performed freely if the cache line is in the Modified or Exclusive state. If it is in the Shared state, all other cached copies must be invalidated first.
+     This is typically done by a broadcast operation known as Request For Ownership (RFO).A cache that holds a line in the Modified state must snoop (intercept) all attempted reads 
+    (from all of the other caches in the system) of the corresponding main memory location and insert the data that it holds.
+     This can be done by forcing the read to back off (i.e. retry later), then writing the data to main memory and changing the cache line to the Shared state. It can also be done by sending data from Modified cache to the cache performing the read. Note, snooping only required for read misses (protocol ensures that Modified cannot exist if any other cache can perform a read hit).
+
+A cache that holds a line in the Shared state must listen for invalidate or request-for-ownership broadcasts from other caches, and discard the line (by moving it into Invalid state) on a match.
+
+The Modified and Exclusive states are always precise: i.e. they match the true cache line ownership situation in the system. The Shared state may be imprecise: if another cache discards a Shared line, this cache may become the sole owner of that cache line, but it will not be promoted to Exclusive state. Other caches do not broadcast notices when they discard cache lines, and this cache could not use such notifications without maintaining a count of the number of shared copies.
+
+In that sense the Exclusive state is an opportunistic optimization: If the CPU wants to modify a cache line that is in state S, a bus transaction is necessary to invalidate all other cached copies. State E enables modifying a cache line with no bus transaction.
+   - memory dependency
+     store src_loc, dest_loc
+     load  dest_loc,src_loc
+   - cache
+     - cache coherence( multiple cores have the same cache line in their cache)
+     - synchronization -requires atomic read-write access operations to memory
+       ecxchange ,test and set
+     - consitency 
+
+* [[https://github.com/binhnguyennus/awesome-scalability#architecture][Saclability]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                            .

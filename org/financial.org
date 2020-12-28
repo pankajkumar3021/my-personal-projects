@@ -1,0 +1,20 @@
+
+* Basics
+** [[https://analystprep.com/cfa-level-1-exam/portfolio-management/return-generating-models/][Multifcator model for mesuring the rate of return of a security]]
+** CAPM Model - A model to measure the sesitivity of rate of return of an asset to market risk(symmetric)
+R = Rf +  B* (Rm - Rf)
+
+In the formula above,
+
+Ra = Estimated return on the investment
+
+Rf = The Risk-free rate of return on an investment
+
+B = Beta value or risk value of investing in financial asset
+
+Rm  = Average return in the capital market
+** [[https://analystnotes.com/][important CFA Notes]]
+   
+** Portfolio Expected Return and Variance
+The expected return on a portfolio of assets is the market-weighted average of the expected returns on the individual assets in the portfolio.
+The variance of a portfolio's return consists of two components: the weighted average of the variance for individual assets and the weighted covariance between pairs of individual assets.

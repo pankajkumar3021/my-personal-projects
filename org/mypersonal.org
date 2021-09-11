@@ -1,3 +1,24 @@
+* TODO Mutual Fund Registraion
+  - Important chapters
+    - Concept & role of mutual fund
+    - Fund Structure and Constituents
+    - Legal and regulatory environment
+    - Offer Document
+* 7  habits of highly affective ppl 
+   - Proactive
+      Prioritize (Urgent-Important Quad)
+   - Begin with End in Mind
+   - First thing First
+   - Think Win Win
+   - Seek First to Understand then to be understood (Rephrase &
+     reflect with feeling,focus narraowing on logic and advise will be requested)
+   - Synergy
+   - Sarpen the saw (Physical,Spiritual, Cognitive Health,Social)
+* Leadership
+  - Emotional intelligence
+    - Cognitive Empathy (what is her/his mental model for reality)
+    - Empathetic concern (How do you respond to others feeling )
+    - Emotional Empathy (A sence of how the second person is feeling)
 * Spontaneous speaking
  - questioning
  - conversational
@@ -20,6 +41,27 @@
 8.  Brain Protection 
 9.  Don't Stop Learning New Things
 10.  Stress Management
+* Stock Trading
+  - Indicators
+     - Market Profile
+     - VSA
+     - Stochastics
+     - MACD
+     - Moving Averages
+  - Stock Chart
+    - Trend Line (Candle Stick)
+    - Trade Volume
+    - Lines of support and resistence
+  
+* Agile & Project Managent
+  - Self-Organizing Team 
+    - Team determines how they will respond to a challenge
+    - Managers ,Leaders,PO and scrum masters determine what that
+      challenge is. They can also act as influencers
+    - Leaders commit to evaluation of behaviours  that emerges from
+      inetrations of the agents
+    - checkpoints to prove instability,tension and ambiguity 
+   
 * Height Gain        
  - Normal or low levels of estrogen
  - Optimal Thyroid

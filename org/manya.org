@@ -1,1 +1,8 @@
-LEARNING
+
+
+* LEARNING
+* TODO English Grammer
+  - [[https://www.perfect-english-grammar.com/grammar-exercises.html][Practice english]]
+  - [[https://www.fluentu.com/][Verbs and tenses]]
+
+

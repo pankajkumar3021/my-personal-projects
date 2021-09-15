@@ -2,7 +2,51 @@
 
 * LEARNING
 * TODO English Grammer
+  :PROPERTIES:
+  :ORDERED:  t
+  :END:
   - [[https://www.perfect-english-grammar.com/grammar-exercises.html][Practice english]]
+  - Past Perfect Continous 
+    Here's how to make the past perfect continuous. It's 'had' + been (the past participle of 'be')+ verb-ing
+    Firstly, let's look at the positive form:
+     ** I had been living
+     ** You had been going
+     ** She had been sleeping
+     ** He had been working
+     ** It had been raining
+     ** We had been studying
+     ** They had been cooking
+
+    Next, the negative form:
+     ** I had not been trying (I hadn't been..)
+     ** You had not been working (you hadn't been..)
+     ** She had not been crying (she hadn't been..)
+     ** He had not been shopping (he hadn't been..)
+     ** It had not been snowing (it hadn't been..)
+     ** We had not been reading (we hadn't been..)
+     ** They had not been running (they hadn't been..)
+     ** Here's an exercise about the negative
+
+    It's pretty easy to make the question too.
+
+    'Yes / no' questions:
+    ** Had I been working?
+    ** Had you been sleeping?
+    ** Had she been reading?
+    ** Had he been watching TV?
+    ** Had it been raining?
+    ** Had we been drinking?
+    ** Had they been eating?
+
+    'Wh' questions:
+    ** Where had I been working? 
+    ** How long had you been sleeping?
+    ** What had she been reading?
+    ** How long had he been watching TV?
+    ** How long had it been raining?
+    ** What had we been drinking?
+    ** Why had they been eating?
+
   - When should I use the Past Perfect Continuous?
     1. Something that started in the past and continued up to another
        action or time in the past. The past perfect continuous tells us 'how long',just like the present perfect continuous, but this time the action continues up to a point in the past rather than the present. Usually we use 'for + time'
@@ -18,7 +62,8 @@
       Examples
           1. The pavement was wet, it had been raining. (The rain had finished before the time I'm describing in the past. We could see the result of the rain.)
           2. The children had been playing and so the room was a mess!
-          3. I'd been working before I saw you and that's why I was really tired.
+          3. 
+I'd been working before I saw you and that's why I was really tired.
    
   
 

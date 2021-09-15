@@ -3,6 +3,23 @@
 * LEARNING
 * TODO English Grammer
   - [[https://www.perfect-english-grammar.com/grammar-exercises.html][Practice english]]
-  - [[https://www.fluentu.com/][Verbs and tenses]]
+  - When should I use the Past Perfect Continuous?
+    1. Something that started in the past and continued up to another
+       action or time in the past. The past perfect continuous tells us 'how long',just like the present perfect continuous, but this time the action continues up to a point in the past rather than the present. Usually we use 'for + time'
+       Examples: 
+       1. She had been working at that company for a year when she met James.
+       2. I'd been walking for hours when I finally found the house.
+       3. We'd been living in Berlin for three months when we had to leave.
+    2.Something that finished just before another event in the
+    past. This is usually used to show a result at a time in the
+    past. It's very similar to the present perfect continuous, but the
+    action finishes before another time in the past, rather than
+    finishing before the present.
+      Examples
+          1. The pavement was wet, it had been raining. (The rain had finished before the time I'm describing in the past. We could see the result of the rain.)
+          2. The children had been playing and so the room was a mess!
+          3. I'd been working before I saw you and that's why I was really tired.
+   
+  
 
 

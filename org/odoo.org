@@ -20,19 +20,33 @@ sudo apt-get upgrade
 *** install postgress
     1. sudo apt-get install postgresql
 
-*** After the installation is complete, let’screate a new PostgreSQL user so that we can manage the Odoo databases. First wehave to switch the user to Postgres,
+*** Unistall postgress
+    1. sudo apt-get --purge remove postgresql
+    # remove other installed dependencies
+    # to know all the installed depedencies 
+    dpkg -l | grep postgres
+    
+    # run command 1. for all the dependencies
 
-   sudo su - postgres
+    # remove postgres user
+    sudo deluser postgres
+
+    
+
+
+***  After the installation is complete, let’screate a new PostgreSQL user so that we can manage the Odoo databases. First wehave to switch the user to Postgres,
+
+   - sudo su - postgres
 
   # Then, using thefollowing command, we can create a new user ‘odoouser’
 
-  - createuser --createdb --username postgres--no-createrole --no-superuser --pwprompt odoouser
+  - createuser --createdb --username odoouser --no-createrole --no-superuser --pwprompt
 
   # It will ask for a password in this step, so provide a password and remember it because we need that in the upcoming steps.
 
   # Now we have to make this user that we havecreated as a SUPERUSER which can be done using the following command.
 
-  psql
+  - psql
   ALTER USER odoouser WITH SUPERUSER;
 
   # we can exitfrom psql and postgres users.

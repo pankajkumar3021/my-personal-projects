@@ -22,13 +22,17 @@ sudo apt-get upgrade
 
 *** Unistall postgress
     1. sudo apt-get --purge remove postgresql
-    # remove other installed dependencies
-    # to know all the installed depedencies 
+    
+    remove other installed dependencies
+    
+    to know all the installed depedencies 
+    
     dpkg -l | grep postgres
     
-    # run command 1. for all the dependencies
+    run command 1. for all the dependencies
 
-    # remove postgres user
+    remove postgres user
+
     sudo deluser postgres
 
     

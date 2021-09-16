@@ -40,15 +40,17 @@ sudo apt-get upgrade
 
 ***  After the installation is complete, let’screate a new PostgreSQL user so that we can manage the Odoo databases. First wehave to switch the user to Postgres,
 
-   - sudo su - postgres
+   - sudo su - postgres psql
 
-  # Then, using thefollowing command, we can create a new user ‘odoouser’
+   Then, using thefollowing command, we can create a new user ‘odoouser’
 
-  - createuser --createdb --username odoouser --no-createrole --no-superuser --pwprompt
+   - CREATE USER odoouser with PASSWD 'admin'
+   - ALTER USER odoouser CREATEDB
 
-  # It will ask for a password in this step, so provide a password and remember it because we need that in the upcoming steps.
+  
+   It will ask for a password in this step, so provide a password and remember it because we need that in the upcoming steps.
 
-  # Now we have to make this user that we havecreated as a SUPERUSER which can be done using the following command.
+   Now we have to make this user that we havecreated as a SUPERUSER which can be done using the following command.
 
   - psql
   ALTER USER odoouser WITH SUPERUSER;
@@ -59,18 +61,14 @@ sudo apt-get upgrade
   exit
 
 
-  Step 3: If you have not already, let’s install VS Code.
 
-  This can be simply done using the following command,
 
-  sudo snap install --classic code
-  Or you can check this linkfor other downloading options.
-
-  Step 4: Let’s download Odoo source files. From the Odoo GitHub repository, we can manually download the files or if git is installed in our system we can directly clone it.
+***  download Odoo source files. From the Odoo GitHub repository, we can manually download the files or if git is installed in our system we can directly clone it.
 
   We can clone the Odoo source using the below command. It will create a new directory named ‘odoo’ in the home directory.
 
-  git clone  https://www.github.com/odoo/odoo --depth 1 --branch 14.0 --single-branch odoo
+  git clone  git@github.com:pankajkumar3021/odoo.git  --depth 1 --branch 14.0 --single-branch odoo
+
   After completing cloning we can install therequired dependencies that are mentioned inside the requirements.txt file. Forthat, we have to enter the ‘odoo’ directory.
 
   cd odoo
@@ -78,7 +76,7 @@ sudo apt-get upgrade
 
   Now using pip we can install the dependenciesinside requirements.txt
 
-  sudo pip3 install -requirements.txt
+  sudo pip3 install requirements.txt
 
   Inside the Odoo directory, let’s create a newconfiguration file. For that we need to open the Odoo directory in the VS Code.Goto File > Open Folder > Select the ‘odoo’ directory.
 
@@ -90,7 +88,12 @@ sudo apt-get upgrade
   db_host = False
   db_port = False
   db_user = odoouser
-  db_password = False
+  db_password = admin
   addons_path =/home/user/odoo/addons
   xmlrpc_port = 8014
-  In this configuration, you have to modify the db_password with the password that you gave for the ‘odoouser’ user in step 2. 
+
+  In this configuration, you have to modify the db_password with the
+  password that you gave for the ‘odoouser’ user in step 2.
+
+*** Running odoo 
+    // TODO

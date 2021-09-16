@@ -1,0 +1,78 @@
+* ODOO
+** Installation on Ubuntu
+sudo apt-get update 
+sudo apt-get upgrade
+*** important python packages and libraries 
+  1. sudo apt-get install -y python3-pip 
+  2. sudo apt-get install python-dev python3-dev build-essential libjpeg-dev libpq-dev libjpeg8-dev libxml2-dev libssl-dev libffi-dev
+  libmysqlclient-dev libxslt1-dev  zlib1g-dev libsasl2-dev libldap2-dev liblcms2-dev
+*** have to install some web dependencies.
+ 1. curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+ 2. sudo apt-get install -y nodejs
+ 3. npm config set strict-ssl false
+ 4. sudo ln -s /usr/bin/nodejs /usr/bin/node 
+ 5. sudo npm install -g less less-plugin-clean-css 
+ 6. sudo apt-get install -y node-less
+
+*** for reports
+ 1. sudo apt-get install wkhtmltopdf
+
+*** install postgress
+    1. sudo apt-get install postgresql
+
+*** After the installation is complete, let’screate a new PostgreSQL user so that we can manage the Odoo databases. First wehave to switch the user to Postgres,
+
+   sudo su - postgres
+
+  # Then, using thefollowing command, we can create a new user ‘odoouser’
+
+  - createuser --createdb --username postgres--no-createrole --no-superuser --pwprompt odoouser
+
+  # It will ask for a password in this step, so provide a password and remember it because we need that in the upcoming steps.
+
+  # Now we have to make this user that we havecreated as a SUPERUSER which can be done using the following command.
+
+  psql
+  ALTER USER odoouser WITH SUPERUSER;
+
+  # we can exitfrom psql and postgres users.
+
+  \q
+  exit
+
+
+  Step 3: If you have not already, let’s install VS Code.
+
+  This can be simply done using the following command,
+
+  sudo snap install --classic code
+  Or you can check this linkfor other downloading options.
+
+  Step 4: Let’s download Odoo source files. From the Odoo GitHub repository, we can manually download the files or if git is installed in our system we can directly clone it.
+
+  We can clone the Odoo source using the below command. It will create a new directory named ‘odoo’ in the home directory.
+
+  git clone  https://www.github.com/odoo/odoo --depth 1 --branch 14.0 --single-branch odoo
+  After completing cloning we can install therequired dependencies that are mentioned inside the requirements.txt file. Forthat, we have to enter the ‘odoo’ directory.
+
+  cd odoo
+
+
+  Now using pip we can install the dependenciesinside requirements.txt
+
+  sudo pip3 install -requirements.txt
+
+  Inside the Odoo directory, let’s create a newconfiguration file. For that we need to open the Odoo directory in the VS Code.Goto File > Open Folder > Select the ‘odoo’ directory.
+
+  Create a new file ‘odoo.conf’ and paste thefollowing configuration into the conf file.
+
+  [options]
+  ; Is This ThePassword That Allows Database Operations:
+  ; admin_passwd =admin
+  db_host = False
+  db_port = False
+  db_user = odoouser
+  db_password = False
+  addons_path =/home/user/odoo/addons
+  xmlrpc_port = 8014
+  In this configuration, you have to modify the db_password with the password that you gave for the ‘odoouser’ user in step 2. 

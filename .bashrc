@@ -60,9 +60,6 @@ alias snano='sedit'
 export CLICOLOR=1
 LS_COLORS=$LS_COLORS:'ow=1;34:' ; export LS_COLORS
 
-export GREP_OPTIONS='--color=auto' #deprecated
-alias grep="/usr/bin/grep $GREP_OPTIONS"
-unset GREP_OPTIONS
 
 # Color for manpages in less makes manpages a little easier to read
 export LESS_TERMCAP_mb=$'\E[01;31m'

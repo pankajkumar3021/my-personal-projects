@@ -1,10 +1,31 @@
 
 
 * LEARNING
-* TODO English Grammer
-  :PROPERTIES:
-  :ORDERED:  t
-  :END:
+
+* TODO English Grammar practise 
+  DEADLINE: <2021-09-16 Thu>
+
+* TODO Maths -Practise two variable equestions solving using substitution method
+  DEADLINE: <2021-09-20 Mon>
+   (a) x + y = 15                    x - y = 3
+
+  (b) x + y = 0                      x - y = 2
+
+  (c) 2x - y = 3                   4x + y = 3
+
+  (d) 2x - 9y = 9               5x + 2y = 27
+
+  (e) x + 4y = -4               3y - 5x = -1
+
+  (f) 2x - 3y = 2                  x + 2y = 8
+
+  (g) x + y = 7                  2x - 3y = 9
+
+  (h) 11y + 15x = -23        7y - 2x = 20
+
+   (i) 5x - 6y = 2                6x - 5y = 9
+
+* English Grammar
   - [[https://www.perfect-english-grammar.com/grammar-exercises.html][Practice english]]
   - Past Perfect Continous 
     Here's how to make the past perfect continuous. It's 'had' + been (the past participle of 'be')+ verb-ing

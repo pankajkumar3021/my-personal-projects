@@ -37,8 +37,7 @@
     I had been  looking for a job for several months when I found this position.
     As with all continuous forms, when we use the past perfect continuous we’re focusing on the action itself and possibly also the effect on the subject, rather than its completion. For example,
     The workers had been unloading the truck when the storm started.
-
-We don’t know if the unloading was completed or not, and it’s not important. The focus is just on their action. 
+    We don’t know if the unloading was completed or not, and it’s not important. The focus is just on their action. 
     Here's how to make the past perfect continuous. It's 'had' + been (the past participle of 'be')+ verb-ing
     Firstly, let's look at the positive form:
     - I had been living
@@ -102,6 +101,21 @@ We don’t know if the unloading was completed or not, and it’s not important.
             really tired.
 
       3. [[https://www.perfect-english-grammar.com/past-perfect-continuous-exercise-3.html][Practise Past Continous]]
+  - Past Perfect
+    How to form the past perfect
+    We form the past perfect by using ‘had’ and the past participle of
+    the verb.
+    For example,
+
+    “You had met him before.”
+
+    To make questions we invert the auxiliary verb had and the subject:
+
+       “Had you met him before?”
+
+    And to make negative forms we add ‘not’ to ‘had’:
+       “You hadn’t met him before.”
+
   - [[https://www.perfect-english-grammar.com/present-simple-use.html][PresntTense Forms]]
 
  

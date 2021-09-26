@@ -2,6 +2,9 @@
 
 * LEARNING
 
+* English Vocab
+  juggle - धोखा देना, जादू करना, हाथ की सफाई करना ,एक साथ संभालना, हथकंडा करना
+
 * TODO English Grammar practise 
   DEADLINE: <2021-09-16 Thu>
 
@@ -27,7 +30,15 @@
 
 * English Grammar
   - [[https://www.perfect-english-grammar.com/grammar-exercises.html][Practice english]]
-  - Past Perfect Continous 
+  - Past Perfect Continous
+    We use the past perfect continuous to refer to an ONGOING ACTION
+    that ended before ANOTHER  ACTION/EVENT in the past. 
+    For example,
+    I had been  looking for a job for several months when I found this position.
+    As with all continuous forms, when we use the past perfect continuous we’re focusing on the action itself and possibly also the effect on the subject, rather than its completion. For example,
+    The workers had been unloading the truck when the storm started.
+
+We don’t know if the unloading was completed or not, and it’s not important. The focus is just on their action. 
     Here's how to make the past perfect continuous. It's 'had' + been (the past participle of 'be')+ verb-ing
     Firstly, let's look at the positive form:
     - I had been living
@@ -79,7 +90,7 @@
 
       2. Something that finished just before another event in the
          past. This is usually used to show a result at a time in the
-         past. It's very similar to the present perfect continuous, but the
+        past. It's very similar to the present perfect continuous, but the
          action finishes before another time in the past, rather than
          finishing before the present.
 

@@ -117,7 +117,36 @@
     And to make negative forms we add ‘not’ to ‘had’:
        “You hadn’t met him before.”
 
+      We use the past perfect to refer to something that happened MOIRE IN
+      THE PAST than something else. For this reason it’s almost always used with another phrase in the simple past. For example,
+
+       Bob was exhausted. He had worked hard all day.It’s common to use the
+       following adverbs with the past perfect like already, just, never,
+       previously. 
+     These are positioned between had and the past participle. We can also use yet with the past perfect, and put it at the end of the sentence. Here are some examples.
+
+     When Miguel arrived, the party had already started.
+
+     The kids were really excited about visiting the fun park. They’d never been before.
+
+     I didn’t go to see the film with my friends because I’d already seen it.
+
+     When we went outside it had just begun to rain.
+
+    The new CEO joined the company last month. She’d previously worked for a pharmaceutical firm.
+
+    My brother sold his car on Saturday. He’d had it for 20 years!
+
+    When we got to the airport we realized we’d left the tickets at home.
+
+    Tim had just retired when you joined the firm, hadn’t he?
+
+   Had the boys already done their homework when you spoke to them?
   - [[https://www.perfect-english-grammar.com/present-simple-use.html][PresntTense Forms]]
+  - Modal Verb
+    Modal verbs add meaning to the main verb in a sentence by
+    expressing possibility, ability, permission, or obligation.
+    words : can	could	may	might	will  would	must	shall	should	ought to
 
  
    

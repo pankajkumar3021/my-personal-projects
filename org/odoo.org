@@ -1,7 +1,7 @@
 * ODOO
 ** Installation on Ubuntu
-sudo apt-get update 
-sudo apt-get upgrade
+   sudo apt-get update 
+   sudo apt-get upgrade
 *** important python packages and libraries 
   1. sudo apt-get install -y python3-pip 
   2. sudo apt-get install python-dev python3-dev build-essential libjpeg-dev libpq-dev libjpeg8-dev libxml2-dev libssl-dev libffi-dev
@@ -96,4 +96,4 @@ sudo apt-get upgrade
   password that you gave for the ‘odoouser’ user in step 2.
 
 *** Running odoo 
-    // TODO
+    // TODO https://odoo-master.readthedocs.io/en/master/setup/install.html

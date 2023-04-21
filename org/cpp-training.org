@@ -1,0 +1,8 @@
+* Learn the basics of Unix Command
+  - files and directores {creating and editing ,listing ,seaching ..
+  - VI Editor
+  - Memory Management in Linux
+  - Process and Process management
+* Why C++
+* Compiling C++ code
+* 

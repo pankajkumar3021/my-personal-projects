@@ -1,0 +1,12 @@
+* Techincal  Interview Questions
+  - Design-Develop
+    Crypto trading project is looking for consultant to help us build a market data aggregation service.
+
+We are connected to a number of crypto exchanges to receive their trading data. We need to create the following functionality:
+
+1) a service that will aggregate all prices are continuously received from our trading partners in real time;
+2) assemble and maintain our own book of all available bids and offers;
+3) publish our own prices to our customers via web socket.
+
+Service needs to be designed to handle high number of tradable instruments, and data sources.
+It needs to be capable to handle high throughput of messages (100k per second minimum). It needs to operate in a low latency, high availability manner.

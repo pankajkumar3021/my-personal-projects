@@ -1,0 +1,6 @@
+//completely removing nginx
+nginx remove and insall again
+sudo apt remove --purge nginx*
+sudo apt autoremove
+sudo apt update
+sudo apt install nginx

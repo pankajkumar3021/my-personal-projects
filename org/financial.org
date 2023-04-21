@@ -15,6 +15,12 @@ B = Beta value or risk value of investing in financial asset
 Rm  = Average return in the capital market
 ** [[https://analystnotes.com/][important CFA Notes]]
    
+** Stocks and Equity Trading
+   - [[http://www.valuepickr.com/basics/stock-analysis-valuation-frameworks/stock-analysis-framework/][STock Valuation and Selection]]
+
 ** Portfolio Expected Return and Variance
 The expected return on a portfolio of assets is the market-weighted average of the expected returns on the individual assets in the portfolio.
 The variance of a portfolio's return consists of two components: the weighted average of the variance for individual assets and the weighted covariance between pairs of individual assets.
+
+
+

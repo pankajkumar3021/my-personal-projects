@@ -1,4 +1,13 @@
 - [[https://keithschwarz.com/interesting/][Intersting DS Code]]
+- Leading a company
+  - Sales Planning
+  - Measuring Company Performance Quarterly
+  - Incremental ASV,
+  - Revenenue
+  - Direct Expense
+  - Gross Profit
+  - Margin Improvement
+  - ASV Sales
 - SOA
   - Concepts
     - Services

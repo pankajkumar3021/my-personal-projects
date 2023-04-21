@@ -4,6 +4,12 @@
     - Fund Structure and Constituents
     - Legal and regulatory environment
     - Offer Document
+* Getting Things Done
+  - Capture
+  - Process
+  - Organize
+  - Review
+  - Engage
 * 7  habits of highly affective ppl 
    - Proactive
       Prioritize (Urgent-Important Quad)
@@ -15,6 +21,14 @@
    - Synergy
    - Sarpen the saw (Physical,Spiritual, Cognitive Health,Social)
 * Leadership
+  - Approach
+  - Avoid
+  - Conversation
+    - Voice Warm up
+      - Lips - baup Bup Bup
+      - Weeaaawee
+      - Tounge -La La La --Rrrrr 
+      - BrrrrrVrrr
   - Emotional intelligence
     - Cognitive Empathy (what is her/his mental model for reality)
     - Empathetic concern (How do you respond to others feeling )
@@ -43,15 +57,19 @@
 10.  Stress Management
 * Stock Trading
   - Indicators
-     - Market Profile
-     - VSA
-     - Stochastics
-     - MACD
-     - Moving Averages
+    - Market Profile
+    - VSA
+    - Stochastics
+    - MACD
+    - Moving Averages
   - Stock Chart
     - Trend Line (Candle Stick)
     - Trade Volume
     - Lines of support and resistence
+  - To invest
+    niftybees
+    bankbees
+    mon100
   
 * Software Developmenet
   - python dev dependencies to be installed on ubuntu 
@@ -100,6 +118,9 @@
       - After the installation is complete, lets create a new PostgreSQL user so that we can manage the Odoo databases. First wehave to switch the user to Postgres,
         - sudo su - postgres
     
+
+* [[https://isha.sadhguru.org/mahashivratri/hi/shiva/shiv-tandav-stotram-lyrics-meaning/][Shiv Tandav]]
+
 
 * Agile & Project Managent
   - Self-Organizing Team 

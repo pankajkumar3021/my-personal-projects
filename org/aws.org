@@ -1,6 +1,5 @@
-* AWS
-  Pillars of AWS framework (Cost Reliability Operational Performance
-  Security)
+* AWS Cloud Solution Architect
+  
   
 
 

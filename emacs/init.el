@@ -13,6 +13,10 @@
 
 (require 'use-package)
 
+
+
+
+
 (load-theme 'manoj-dark)
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
@@ -127,25 +131,54 @@
 ;;extra
 
 ;; key binding for directly going to orgmode file
-(global-set-key (kbd "C-c o") 
-(lambda () (interactive) (find-file "c:/pankaj/sw/emacs/.emacs.d/org/projects.org")))
+
 (global-set-key (kbd "C-c a") 'org-agenda)
 (define-key global-map "\C-cc" 'org-capture)
 (setq org-log-done t)
+
+;;my current settings 
+(setq  emacs-base-path "c:/pankaj/sw/my-personal-projects/emacs/"
+       emacs-default-org-file "c:/pankaj/sw/my-personal-projects/emacs/org/projects.org"
+       personal-notes-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/personal/notes.org"
+	   personal-work-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/personal/work-log.org"
+	   personal-gtd-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/personal/gtd.org"
+       
+	   
+	   work-notes-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/work/notes.org"
+       office-work-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/work/office-work-log.org"
+	   office-gtd-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/work/gtd.org"
+	   office-meetings-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/work/meetings.org"
+
+	   )
+
+(global-set-key (kbd "C-c o") 
+(lambda () (interactive) (find-file emacs-default-org-file)))
+
+
 (setq org-capture-templates
       '(    
-        ("j" "Work Log Entry"
-         entry (file+datetree "c:/pankaj/sw/emacs/.emacs.d/org/work-log.org")
+        ("w" "Office Work Log Entry"
+         entry (file+datetree office-work-file-path)
+         "* %?"
+         :empty-lines 0)
+		 
+		 ("a" "Personal Work Log Entry"
+         entry (file+datetree personal-work-file-path)
          "* %?"
          :empty-lines 0)
 
-        ("n" "Note"
-         entry (file+headline "c:/pankaj/sw/emacs/.emacs.d/org/notes.org" "Random Notes")
+        ("n" "Personal Notes"
+         entry (file+headline personal-notes-file-path "Random Notes")
          "** %?"
          :empty-lines 0)
 
-        ("n" "Note"
-         entry (file+headline "c:/pankaj/sw/emacs/.emacs.d/org/notes.org" "Random Notes")
+        ("b" "Work Notes"
+         entry (file+headline work-notes-file-path "Random Notes")
+         "** %?"
+         :empty-lines 0)
+		 
+	    ("z" "Work Notes Review"
+         entry (file+headline work-notes-file-path "Team Reports Review")
          "** %?"
          :empty-lines 0)
 
@@ -155,12 +188,17 @@
          :empty-lines 0)
 
         ("g" "General To-Do"
-         entry (file+headline "c:/pankaj/sw/emacs/.emacs.d/org/todos.org" "General Tasks")
+         entry (file+headline office-gtd-file-path "General Tasks")
+         "* TODO [#B] %?\n:Created: %T\n "
+         :empty-lines 0)
+		 
+		("h" "General To-Do"
+         entry (file+headline personal-gtd-file-path "General Tasks")
          "* TODO [#B] %?\n:Created: %T\n "
          :empty-lines 0)
 
         ("m" "Meeting"
-         entry (file+datetree "c:/pankaj/sw/emacs/.emacs.d/org/meetings.org")
+         entry (file+datetree office-meetings-file-path)
          "* %? :meeting:%^g \n:Created: %T\n** Attendees\n*** \n** Notes\n** Action Items\n*** TODO [#A] "
          :tree-type week
          :clock-in t
@@ -378,5 +416,5 @@
           ))
         ))
 ;;setq default-directory "C:\\pankaj\sw\emacs\\.emacs.d\\"
-(setq default-directory "C:\pankaj\sw\emacs\.emacs.d")
-
+(setq default-directory emacs-base-path)
+;;https://github.com/james-stoup/emacs-org-mode-tutorial

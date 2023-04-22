@@ -2,16 +2,22 @@
 (package-initialize)
 
 ;; repositories
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("melpa" . "http://melpa.org/packages/")
-                         ("org" . "http://orgmode.org/elpa/")))
-
+(setq package-archives
+      '(("gnu-elpa"     . "https://elpa.gnu.org/packages/")
+        ("melpa-stable" . "https://stable.melpa.org/packages/")
+        ("melpa"        . "https://melpa.org/packages/"))
+      package-archive-priorities
+      '(("melpa-stable" . 10)
+        ("gnu-elpa"     . 5)
+        ("melpa"        . 0)))
 ;;Using use-package to automatically install certain packages, as well as the ease of lazily loading them.
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 
 (require 'use-package)
+;;(require 'org-pretty-table)
+;;(require 'evil-org)
 
 
 
@@ -19,8 +25,6 @@
 
 (load-theme 'manoj-dark)
 (require 'org)
-(define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 (setq org-todo-keywords
       '(
@@ -40,7 +44,6 @@
         ))  
 		
 		
-(setq org-agenda-files (list "c:/pankaj/Factset/emacs-24.3-bin-i386/emacs-24.3/bin/org"))
 (defun volatile-kill-buffer ()
    "Kill current buffer unconditionally."
    (interactive)
@@ -137,48 +140,61 @@
 (setq org-log-done t)
 
 ;;my current settings 
-(setq  emacs-base-path "c:/pankaj/sw/my-personal-projects/emacs/"
-       emacs-default-org-file "c:/pankaj/sw/my-personal-projects/emacs/org/projects.org"
-       personal-notes-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/personal/notes.org"
-	   personal-work-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/personal/work-log.org"
-	   personal-gtd-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/personal/gtd.org"
+(setq  emacs-base-path "c:/pankaj/sw/my-personal-projects/emacs/")
+(setq  my-org-path "c:/pankaj/sw/my-personal-projects/emacs/org/")
+;;(setq  emacs-default-org-file "c:/pankaj/sw/my-personal-projects/emacs/org/projects.org")
+(setq  personal-notes (concat my-org-path "personal-notes.org")
+	   personal-work  (concat my-org-path "personal-notes.org")
+	   personal-gtd  (concat my-org-path "personal-notes.org")
+
        
 	   
-	   work-notes-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/work/notes.org"
-       office-work-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/work/office-work-log.org"
-	   office-gtd-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/work/gtd.org"
-	   office-meetings-file-path "c:/pankaj/sw/my-personal-projects/emacs/org/work/meetings.org"
+	   office-notes  (concat my-org-path "office-notes.org")
+       office-work (concat my-org-path  "office-work.org")
+	   office-gtd  (concat my-org-path  "office-gtd.org")
+	   office-meetings (concat my-org-path  "office-meetings.org")
 
 	   )
 
+(setq org-directory "c:/pankaj/sw/my-personal-projects/emacs/org/")
+
+;;(setq org-agenda-files (list
+  ;;    (concat org-directory "gtd.org")
+   ;;   (concat org-directory "notes.org")
+    ;;  (concat org-directory "work-log.org")
+     ;; )
+;;)
+
+
+
 (global-set-key (kbd "C-c o") 
-(lambda () (interactive) (find-file emacs-default-org-file)))
+(lambda () (interactive) (find-file "c:/pankaj/sw/my-personal-projects/emacs/org/projects.org")))
 
 
 (setq org-capture-templates
       '(    
         ("w" "Office Work Log Entry"
-         entry (file+datetree office-work-file-path)
+         entry (file+datetree office-work)
          "* %?"
          :empty-lines 0)
 		 
 		 ("a" "Personal Work Log Entry"
-         entry (file+datetree personal-work-file-path)
+         entry (file+datetree personal-work)
          "* %?"
          :empty-lines 0)
 
         ("n" "Personal Notes"
-         entry (file+headline personal-notes-file-path "Random Notes")
-         "** %?"
+         entry (file+headline personal-notes "Random Notes")
+        "** %?"
          :empty-lines 0)
 
         ("b" "Work Notes"
-         entry (file+headline work-notes-file-path "Random Notes")
+         entry (file+headline office-notes "Random Notes")
          "** %?"
          :empty-lines 0)
 		 
 	    ("z" "Work Notes Review"
-         entry (file+headline work-notes-file-path "Team Reports Review")
+         entry (file+headline office-notes "Team Reports Review")
          "** %?"
          :empty-lines 0)
 
@@ -188,17 +204,17 @@
          :empty-lines 0)
 
         ("g" "General To-Do"
-         entry (file+headline office-gtd-file-path "General Tasks")
+         entry (file+headline office-gtd "General Tasks")
          "* TODO [#B] %?\n:Created: %T\n "
          :empty-lines 0)
 		 
 		("h" "General To-Do"
-         entry (file+headline personal-gtd-file-path "General Tasks")
+         entry (file+headline personal-gtd "General Tasks")
          "* TODO [#B] %?\n:Created: %T\n "
          :empty-lines 0)
 
         ("m" "Meeting"
-         entry (file+datetree office-meetings-file-path)
+         entry (file+datetree office-meetings)
          "* %? :meeting:%^g \n:Created: %T\n** Attendees\n*** \n** Notes\n** Action Items\n*** TODO [#A] "
          :tree-type week
          :clock-in t
